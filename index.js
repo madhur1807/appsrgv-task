@@ -1,3 +1,5 @@
+var EMAIL_REGEX = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
 $(document).ready(() =>{
     
     $("#signin").on("click", () => {
@@ -81,6 +83,10 @@ function userRegister(){
     }
     if($("#email").val() == null || $("#email").val() == ""){
         success = false;
+    }  else if(!EMAIL_REGEX.test($("#email").val())) {
+        success = false;
+        alert("Please enter valid email id!");
+        return;
     }
     for(let i=0; i<users_array.length; i++){
         if($("#email").val() == users_array[i]["email"]){
@@ -95,12 +101,12 @@ function userRegister(){
             user_name : user_name,
             user_email : user_email
         });  
-        firebase.database().ref('users_new/').on('child_added',(snapshot) => {
-            $("#user_register").trigger("reset");
-            $("#submit_register").removeAttr("disabled");
-            alert("User registered successfully!")
-            window.location = "signin.html";
-        });
+        
+        $("#user_register").trigger("reset");
+        $("#submit_register").removeAttr("disabled");
+        alert("User registered successfully!");
+        window.location = "signin.html";
+
     } else if(!success){                                                                // form validation failed
         alert("Please fill all the fields!");
     } else if(registered){                                                                // email id already registered
