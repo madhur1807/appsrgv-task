@@ -7,12 +7,12 @@
     height: 12vh;
     padding-top: 10px;
     margin-bottom: 4% !important;
+    padding-left: 5% !important;
+    overflow: hidden;
 }
-
 #logo_img{
     height: 75%;
     width: auto;
-    margin-left: 5em;
 }
 
 #first_button{
@@ -83,7 +83,8 @@
         position: relative;
         right: 0;
     }
-    #logo_img{
-        margin-left: 2em;
+    .nav{
+        padding-left: 2% !important;
+        overflow: hidden;
     }
 }
