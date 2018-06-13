@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+    <title>FLUTUR | Register</title>
+</head>
+<body id="main">
+
+    <div class="card card-body col-md-6 mx-auto">
+        <h4 style="text-align: center">Register</h4>
+        <form id="user_register">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input name="email" type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group">
+                <label for="user_name">User Name</label>
+                <input name="user_name" type="text" class="form-control" id="name">
+            </div>
+            <button type="button" class="btn btn-dark" id="submit_register">Submit</button>
+        </form>  
+        <p id="account">
+            <a href="signin.html">Already have an account! Sign In</a>
+        </p>      
+    </div>
+
+    <script  src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>

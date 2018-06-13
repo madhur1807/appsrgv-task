@@ -1,0 +1,89 @@
+#main{
+    background-color: black;
+    color: white
+}
+
+.nav{
+    height: 12vh;
+    padding-top: 10px;
+    margin-bottom: 4% !important;
+}
+
+#logo_img{
+    height: 75%;
+    width: auto;
+    margin-left: 5em;
+}
+
+#first_button{
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 0px;
+    width: 60%;
+    padding: 8px;
+    font-size: 19px;
+    margin-bottom: 5%;
+}
+
+#second_img{
+    height: 43%;
+    width: auto;
+}
+
+.rows{
+    margin-bottom: 7%;
+}
+
+.imgs{
+    width: 76%;
+    height: auto;
+}
+
+.colms{
+    text-align: center;
+}
+
+.sign_in{
+    width: 82%;
+    padding: 10px !important;
+    font-size: 25px !important;
+    margin: 4% 0;
+}
+
+#right_column{
+    top: 30%;
+    position: fixed;
+    right: 0;
+}
+
+.card{
+    margin-top: 5%;
+    border: 2px solid white !important;
+    background-color: black !important;
+}
+
+#account{
+    margin-top: 5%;
+    text-align: center;
+}
+
+#star{
+    width: 10%;
+    height: auto;
+    margin-top: -7px;
+    position: relative;
+    margin-right: 15px;
+}
+
+@media screen and (max-width : 768px){
+    #right_column{
+        text-align: center;
+        top: 0;
+        position: relative;
+        right: 0;
+    }
+    #logo_img{
+        margin-left: 2em;
+    }
+}
